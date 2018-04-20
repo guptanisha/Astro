@@ -1,0 +1,70 @@
+﻿@model Astrowebapp.Models.FromAstroDescription
+
+
+@{
+    ViewBag.Title = "Astro";
+}
+
+
+
+
+
+            <div class="col-md-12 row">
+
+
+                    <div class="form-group">
+                        <div class="main-card col-md-10 col-md-offset-1" style="background-color: transparent">
+
+                                    <div class="table-responsive">
+                                        <div class="container">
+                                            
+                                                @foreach (var item in Model.channel)
+                                                {
+                                                    <div class="logo-box">
+                                                        <a href="@Url.Action("Contact", "Home")">
+                                                            <img src="@Html.Raw(item.channelExtRef[0].value)" alt="a description of the image" width="250px"></a>
+
+                                                        <label> <span style="color:black;font-weight:300"> @Html.DisplayFor(modelItem => item.channelTitle)</span></label>
+
+</div>
+                                                       
+
+                                                        }
+
+                                                    </div>
+                                        @*<table class="table table-responsive" style="width:400px">
+                                            <tr>
+
+
+
+                                            </tr>
+
+                                            @foreach (var item in Model.channel)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <img src="@Html.Raw(item.channelExtRef[0].value)" alt="a description of the image" width="150px" height="100px">
+
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(dummy => item.channelId)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.channelTitle)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.channelDescription)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.channelCategory)
+                                                    </td>
+                                                </tr>
+                                            }
+
+                                        </table>*@
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+       
