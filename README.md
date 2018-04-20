@@ -1,0 +1,2 @@
+# Astro
+1. To display a list of Astro channels (showing at a minimum channel name and number) a. Ability to sort by channel number b. Ability to sort by channel name 2. To allow a user to mark a favourite channel as on-device persistent. a. User launches page and tags a favourite channel b. User closes browser and relaunches - favourite channel appears on screen identified as a favourite 3. Interface must be mobile responsive 4. OnMouse or onclick of channel will result in an overlay with meta information (eg. Channel description)
